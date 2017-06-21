@@ -1,2 +1,2 @@
 # coursera-python-course
-Assignment solutions for the Coursera Pythin for everybody course.
+Assignment solutions for the Coursera's "Python for everybody" course.
