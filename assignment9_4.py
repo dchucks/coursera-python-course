@@ -20,9 +20,9 @@ for line in handle:
         mylst = line.split()
         emaildict[mylst[1]] = emaildict.get(mylst[1], 0) + 1
         
-for emailid in emaildict:
-    if emaildict[emailid] > maxemailcnt:
-        maxemailcnt = emaildict[emailid]
+for emailid, occurance in emaildict.items():
+    if occurance > maxemailcnt:
+        maxemailcnt = occurance
         maxemailid = emailid
         
 print(maxemailid, maxemailcnt)
