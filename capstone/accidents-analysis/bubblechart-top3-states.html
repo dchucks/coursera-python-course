@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawSeriesChart);
+
+    function drawSeriesChart() {
+      	var data = google.visualization.arrayToDataTable([
+		['ID', 'Year', 'Accidents', 'State', 'Education'],
+		['', 2009, 16932, 'Madhya Pradesh', 9.5],
+		['', 2009, 14382, 'Madhya Pradesh', 12],
+		['', 2009, 15953, 'Madhya Pradesh', 8],
+		['', 2010, 17564, 'Madhya Pradesh', 9.5],
+		['', 2010, 18189, 'Madhya Pradesh', 12],
+		['', 2010, 14270, 'Madhya Pradesh', 8],
+		['', 2011, 16658, 'Madhya Pradesh', 9.5],
+		['', 2011, 20207, 'Madhya Pradesh', 12],
+		['', 2011, 12541, 'Madhya Pradesh', 8],
+		['', 2012, 16226, 'Madhya Pradesh', 9.5],
+		['', 2012, 19354, 'Madhya Pradesh', 12],
+		['', 2012, 15630, 'Madhya Pradesh', 8],
+		['', 2013, 17321, 'Madhya Pradesh', 9.5],
+		['', 2013, 21259, 'Madhya Pradesh', 12],
+		['', 2013, 13230, 'Madhya Pradesh', 8],
+		['', 2014, 18525, 'Madhya Pradesh', 9.5],
+		['', 2014, 21608, 'Madhya Pradesh', 12],
+		['', 2014, 13339, 'Madhya Pradesh', 8],
+		['', 2015, 19157, 'Madhya Pradesh', 9.5],
+		['', 2015, 22428, 'Madhya Pradesh', 12],
+		['', 2015, 13362, 'Madhya Pradesh', 8],
+		['', 2009, 20293, 'Maharashtra', 9.5],
+		['', 2009, 19808, 'Maharashtra', 12],
+		['', 2009, 22936, 'Maharashtra', 8],
+		['', 2010, 5516, 'Maharashtra', 9.5],
+		['', 2010, 11355, 'Maharashtra', 12],
+		['', 2010, 4120, 'Maharashtra', 8],
+		['', 2011, 5571, 'Maharashtra', 9.5],
+		['', 2011, 10786, 'Maharashtra', 12],
+		['', 2011, 4193, 'Maharashtra', 8],
+		['', 2012, 5350, 'Maharashtra', 9.5],
+		['', 2012, 10538, 'Maharashtra', 12],
+		['', 2012, 4117, 'Maharashtra', 8],
+		['', 2013, 18048, 'Maharashtra', 9.5],
+		['', 2013, 32702, 'Maharashtra', 12],
+		['', 2013, 12269, 'Maharashtra', 8],
+		['', 2014, 15343, 'Maharashtra', 9.5],
+		['', 2014, 34437, 'Maharashtra', 12],
+		['', 2014, 11847, 'Maharashtra', 8],
+		['', 2015, 20919, 'Maharashtra', 9.5],
+		['', 2015, 19975, 'Maharashtra', 12],
+		['', 2015, 22911, 'Maharashtra', 8],
+		['', 2009, 21374, 'Tamil Nadu', 9.5],
+		['', 2009, 29260, 'Tamil Nadu', 12],
+		['', 2009, 10160, 'Tamil Nadu', 8],
+		['', 2010, 23422, 'Tamil Nadu', 9.5],
+		['', 2010, 29890, 'Tamil Nadu', 12],
+		['', 2010, 11684, 'Tamil Nadu', 8],
+		['', 2011, 21737, 'Tamil Nadu', 9.5],
+		['', 2011, 32655, 'Tamil Nadu', 12],
+		['', 2011, 11481, 'Tamil Nadu', 8],
+		['', 2012, 18826, 'Tamil Nadu', 9.5],
+		['', 2012, 29871, 'Tamil Nadu', 12],
+		['', 2012, 8424, 'Tamil Nadu', 8],
+		['', 2013, 21781, 'Tamil Nadu', 9.5],
+		['', 2013, 35767, 'Tamil Nadu', 12],
+		['', 2013, 8690, 'Tamil Nadu', 8],
+		['', 2014, 20067, 'Tamil Nadu', 9.5],
+		['', 2014, 38094, 'Tamil Nadu', 12],
+		['', 2014, 9089, 'Tamil Nadu', 8],
+		['', 2015, 22305, 'Tamil Nadu', 9.5],
+		['', 2015, 36603, 'Tamil Nadu', 12],
+		['', 2015, 10151, 'Tamil Nadu', 8],
+		]);
+
+var options = {
+          title: 'Road Accidents in India classified according to Education level of Drivers',
+          hAxis: {
+            title: 'Year'
+          },
+          vAxis: {
+            title: 'Number of Accidents'
+          },
+          bubble: {
+            textStyle: {
+              fontSize: 11
+            }
+          }
+        };
+
+      var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
+      chart.draw(data, options);
+    }
+    </script>
+  </head>
+  <body>
+    <div id="series_chart_div" style="width: 1500px; height: 800px;"></div>
+  </body>
+</html>
