@@ -19,3 +19,5 @@ Finally, I created the chart with just the top 3 culprit states. The chart now l
 The Chart displays the year on x-axis and number of accidents on y-axis. The bubbles are colored according to the Indian State they represent. The size of the bubble represents the educational qualification of the driver, larger the bubble size more educated was the driver.
 
 The results of the analysis were quite interesting and in fact changed my own prejudice on the subject. A common perception (perhaps) is that more educated drivers are likely to cause fewer accidents (as they might be more aware of traffic rules, would be more mature etc.). The chart shows that the reality is actually the very reverse. The data shows that people who just received primary education (educated less than Standard 8) had caused lesser accidents than those educated higher than them. In fact, the clear pattern is that “Higher the educational qualification of the driver, more likely s/he is to cause an accident”.
+
+A formal account was also [published at LinkedIn](https://www.linkedin.com/pulse/so-less-educated-drivers-cause-more-road-accidents-chakrabarty).
