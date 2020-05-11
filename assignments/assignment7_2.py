@@ -20,9 +20,9 @@ try:
 		posofint = line.find('0')
 		totval = totval + float(line[posofint:])
 except:
-    print('Please enter mbox-short.txt as the file name.')
+    print("Please enter mbox-short.txt as the file name.")
     
 if(count > 0):
-    print('Average spam confidence:', totval/count)
+    print("Average spam confidence:", totval/count)
 else:
-    print('Found no lines starting with X-DSPAM-Confidence')
+    print("Found no lines starting with X-DSPAM-Confidence")
