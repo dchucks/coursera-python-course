@@ -9,14 +9,14 @@
 # If the user enters a value out of range, print a suitable error message and exit. 
 # For the test, enter a score of 0.85 for desired output B.
 
-rawscore = raw_input("Enter Score: ")
+rawscore = input("Enter Score: ")
 outofrange = False
 grade = None
 
 try:
 	score = float(rawscore)
 except:
-    print "Invalid input, try again."
+    print("Invalid input, try again.")
     exit()
 
 if(score < 0.0):
@@ -25,7 +25,7 @@ elif (score > 1.0):
     outofrange = True
     
 if(outofrange is True):    
-    print "Entered number should be between 0.0 and 1.0."
+    print("Entered number should be between 0.0 and 1.0.")
     quit()
 else:
     if(score >= 0.9):
@@ -38,4 +38,4 @@ else:
         grade = "D"
     elif(score < 0.6):
         grade = "F"
-    print grade
+    print(grade)

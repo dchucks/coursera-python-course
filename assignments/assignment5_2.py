@@ -10,7 +10,7 @@ largest = None
 smallest = None
 
 while True:
-    num = raw_input("Enter a number:")
+    num = input("Enter a number:")
     if num == "done" : break
     try:
         inum = int(num)
@@ -24,7 +24,7 @@ while True:
         elif(inum < smallest):
         	smallest = inum
     except:
-        print "Invalid input"    
+        print("Invalid input")    
     
-print "Maximum is", largest
-print "Minimum is", smallest
+print("Maximum is", largest)
+print("Minimum is", smallest)

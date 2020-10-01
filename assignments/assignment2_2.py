@@ -2,5 +2,5 @@
 # Note that raw_input will pop up a dialog box. Enter Sarah in the pop-up box when you are prompted 
 # so your output will match the desired output.
 
-name = raw_input("Please enter your name:")
-print "Hello", name
+name = input("Please enter your name:")
+print("Hello", name)
